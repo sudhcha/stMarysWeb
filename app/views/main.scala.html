@@ -1,0 +1,28 @@
+@(title: String)(content: Html)
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>@title</title>
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/main.css")">
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/bootstrap.min.css")">
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+        <script src="@routes.Assets.at("javascripts/jquery-1.7.1.min.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.at("javascripts/bootstrap.min.js")" type="text/javascript"></script>
+    </head>
+    <body style="padding:40px;">
+    	<div class="navbar navbar-fixed-top">
+    		<div class="navbar-inner">
+			   <ul class="nav nav-tabs">
+			      <li>
+			        <a href="/">Home</a>
+			      </li>
+			      <li ><a href="priest">Our priest</a></li>
+			      <li><a href="#">Our gathering</a></li>
+			    </ul>
+		  </div>
+		  </div>
+        @content
+    </body>
+</html>
