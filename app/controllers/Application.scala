@@ -13,4 +13,8 @@ object Application extends Controller {
     Ok(views.html.priest(""))
   }
   
+  def maps = Action {
+    Ok(views.html.maps(""))
+  }
+  
 }
